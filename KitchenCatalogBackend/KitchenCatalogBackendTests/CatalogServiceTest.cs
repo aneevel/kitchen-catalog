@@ -1,5 +1,6 @@
 ﻿using KitchenCatalogBackend.DTOs.IngredientDTOs;
 using KitchenCatalogBackend.Models;
+using KitchenCatalogBackend.Services.Interfaces;
 using Moq;
 
 namespace KitchenCatalogBackendTests;
