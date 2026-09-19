@@ -6,14 +6,17 @@ namespace KitchenCatalogBackendTests;
 
 public class CatalogServiceTest
 {
-    [Fact]
-    public async Task AddIngredient_AddsIngredient()
+    [Theory]
+    [InlineData("Cucumber", 1, 1.99)]
+    [InlineData("Eggs", 12, 0.99)]
+    [InlineData("Yellow Onions", 3, 0.99)]
+    public async Task AddIngredient_AddsIngredient(string ingredientName, int amount, float costPerUnit)
     {
         var ingredient =
         {
-            Name = "cucumber",
-            Amount = 1,
-            CostPerUnit = 1.99f
+            Name = ingredientName,
+            Amount = amount,
+            CostPerUnit = costPerUnit
         };
         
         var response = _ingredientService.PostIngredientAsync(ingredient);
