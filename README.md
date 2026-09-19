@@ -33,7 +33,7 @@ A(n incomplete) list of features;
 
 ## License 
 
-Kitchen Catalog is open source software, and all components are released under the [MIT License](https://raw.githubusercontent.com/kitchen-catalog/LICENSE.txt).
+Kitchen Catalog is open source software, and all components are released under the [MIT License](https://raw.githubusercontent.com/aneevel/kitchen-catalog/refs/heads/master/LICENSE).
 
 ## Contributing
 
