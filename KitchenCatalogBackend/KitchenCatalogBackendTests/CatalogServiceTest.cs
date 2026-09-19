@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Net;
+using KitchenCatalogBackend.DTOs.IngredientDTOs;
 using Xunit;
 
 namespace KitchenCatalogBackendTests;
@@ -12,15 +13,10 @@ public class CatalogServiceTest
     [InlineData("Yellow Onions", 3, 0.99)]
     public async Task AddIngredient_AddsIngredient(string ingredientName, int amount, float costPerUnit)
     {
-        var ingredient =
-        {
-            Name = ingredientName,
-            Amount = amount,
-            CostPerUnit = costPerUnit
-        };
-        
+        CreateIngredientDto ingredient = new(ingredientName, amount, costPerUnit);
+
         var response = _ingredientService.PostIngredientAsync(ingredient);
-        
+
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
         var created = await response.Content.ReadFromJsonAsync<IngredientResponse>();
@@ -34,5 +30,6 @@ public class CatalogServiceTest
         Assert.NotNull(response.Headers.Location);
 
         Assert.EndsWith($"/ingredients/{created.Id}", response.Headers.Location!);
+
     }
 }
