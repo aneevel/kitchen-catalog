@@ -15,7 +15,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f026cfbe-a573-4fba-b187-ffc6ced0a30d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Extensions/DTOs/IngredientDTOs/FromDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Error.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KitchenCatalogBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KitchenCatalogBackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/DTOs/IngredientDTOs/CreateIngredientDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/DTOs/IngredientDTOs/CreateIngredientDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Services/IngredientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Services/IngredientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Services/Interfaces/IIngredientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Services/Interfaces/IIngredientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackendTests/CatalogServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackendTests/CatalogServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/DTOs/IngredientDTOs/CreateIngredientDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Extensions/DTOs/IngredientDTOs/FromDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Models/Error.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Models/Ingredient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Models/Result.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Services/IngredientService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KitchenCatalogBackend/Services/Interfaces/IIngredientService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -110,7 +122,9 @@
       <option name="presentableId" value="Default" />
       <updated>1789851733572</updated>
       <workItem from="1789851735141" duration="1229000" />
-      <workItem from="1789852982073" duration="5759000" />
+      <workItem from="1789852982073" duration="6739000" />
+      <workItem from="1789860072580" duration="411000" />
+      <workItem from="1789860538703" duration="2742000" />
     </task>
     <servers />
   </component>

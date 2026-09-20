@@ -5,5 +5,5 @@ namespace KitchenCatalogBackend.Database.Repositories.Interfaces;
 
 public interface IIngredientRepository
 {
-   Task<int> InsertIngredientAsync(Ingredient ingredient); 
+   Task<Result<Ingredient>> InsertIngredientAsync(Ingredient ingredient); 
 }

@@ -1,8 +1,16 @@
 namespace KitchenCatalogBackend.DTOs.IngredientDTOs;
 
-public sealed class CreateIngredientDto
+public class CreateIngredientDto()
 {
-   public string? Name { get; init; }
-   public int Amount { get; init; }
-   public float CostPerUnit { get; init; }
+
+   public CreateIngredientDto(string name, int amount, float costPerUnit) : this()
+   {
+      Name = name;
+      Amount = amount;
+      CostPerUnit = costPerUnit;
+   }
+   public string? Name { get; }
+   public int Amount { get; }
+   public float CostPerUnit { get; }
+   
 }
