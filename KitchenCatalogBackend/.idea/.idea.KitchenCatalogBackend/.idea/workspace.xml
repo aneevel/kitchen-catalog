@@ -15,15 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f026cfbe-a573-4fba-b187-ffc6ced0a30d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Extensions/DTOs/IngredientDTOs/FromDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Error.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KitchenCatalogBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KitchenCatalogBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/DTOs/IngredientDTOs/CreateIngredientDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/DTOs/IngredientDTOs/CreateIngredientDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Database/Repositories/Interfaces/IIngredientRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Models/Error.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Services/IngredientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Services/IngredientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KitchenCatalogBackend/Services/Interfaces/IIngredientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackend/Services/Interfaces/IIngredientService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KitchenCatalogBackendTests/CatalogServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KitchenCatalogBackendTests/CatalogServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +117,7 @@
       <workItem from="1789851735141" duration="1229000" />
       <workItem from="1789852982073" duration="6739000" />
       <workItem from="1789860072580" duration="411000" />
-      <workItem from="1789860538703" duration="2742000" />
+      <workItem from="1789860538703" duration="3157000" />
     </task>
     <servers />
   </component>

@@ -47,4 +47,39 @@ public class CatalogServiceTest
         Assert.Equal(amount, result.Value.Amount);
         Assert.Equal(costPerUnit, result.Value.CostPerUnit);
     }
+
+    [Fact]
+    public async Task AddIngredient_ShouldReturnAFailureResult_AndNotCallTheRepository_WhenNameIsEmpty()
+    {
+        await AssertValidationFailureAsync(
+            new CreateIngredientDto("", 1, 0.99f),
+            Error.IngredientNameEmpty);
+    }
+
+    [Fact]
+    public async Task AddIngredient_ShouldReturnAFailureResult_AndNotCallTheRepository_WhenAmountIsNegative()
+    {
+        await AssertValidationFailureAsync(
+            new CreateIngredientDto("Cucumber", -1, 0.99f),
+            Error.IngredientAmountNegative);
+    }
+
+    [Fact]
+    public async Task AddIngredient_ShouldReturnAFailureResult_AndNotCallTheRepository_WhenCostPerUnitIsNegative()
+    {
+        await AssertValidationFailureAsync(
+            new CreateIngredientDto("Cucumber", 1, -0.01f),
+            Error.IngredientCostPerUnitNegative);
+    }
+
+    private async Task AssertValidationFailureAsync(CreateIngredientDto dto, Error expectedError)
+    {
+        Result<Ingredient> result = await _ingredientService.CreateIngredientAsync(dto);
+
+        Assert.True(result.IsFailure);
+        Assert.Equal(expectedError, result.Error);
+        _mockIngredientRepository.Verify(
+            repo => repo.InsertIngredientAsync(It.IsAny<Ingredient>()),
+            Times.Never);
+    }
 }
